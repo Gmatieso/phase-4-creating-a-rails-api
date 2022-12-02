@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :movies
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+ #updating our routes.rb file to set up just one route our frontend needs 
+ resources :movies, only: [:index]
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
